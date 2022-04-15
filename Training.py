@@ -33,7 +33,7 @@ def reshape_and_normalize(images):
     return images
     
 # Reload the images in case you run this cell multiple times
-(training_images, training_labels), (x_test, y_test)= tf.keras.datasets.mnist.load_data(path=data_path) 
+(training_images, training_labels), _= tf.keras.datasets.mnist.load_data(path=data_path) 
 
 
 # Apply your function
